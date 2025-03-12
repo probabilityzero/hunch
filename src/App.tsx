@@ -178,7 +178,7 @@ function App() {
           ))}
         </div>
 
-        <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-4">
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-3">
           <div className="max-w-4xl mx-auto">
             <div className="relative">
 
@@ -206,7 +206,7 @@ function App() {
                 onChange={handleSearch}
                 onKeyDown={handleKeyDown}
                 placeholder="Choose an animal..."
-                className="w-full px-4 py-1.5 text-lg border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-1 text-lg border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500"
                 disabled={gameState.isCorrect}
               />
 
@@ -221,12 +221,12 @@ function App() {
                 className="flex items-center space-x-2 px-2 py-0 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                 title="Show Hint"
               >
-                <Lightbulb className="w-5 h-5" />
+                <Lightbulb className="w-4 h-4" />
                 Hint
               </button>
               <button
                 onClick={playRandomSound}
-                className="p-2 text-gray-600 hover:text-gray-800 rounded-full transition-colors"
+                className="p-2 py-0 text-gray-600 hover:text-gray-800 rounded-full transition-colors"
                 title="Play Sound Hint"
               >
                 <Volume2 className="w-5 h-5" />
