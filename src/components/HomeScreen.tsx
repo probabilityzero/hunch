@@ -7,9 +7,9 @@ interface HomeScreenProps {
 
 const categories = [
   {
-    title: 'Animals',
+    title: 'Wildlife',
     items: [
-      { id: 'mammals', name: 'Mammals', icon: Rabbit, available: true },
+      { id: 'mammals', name: 'Animal', icon: Rabbit, available: true },
       { id: 'birds', name: 'Birds', icon: Bird, available: true },
       { id: 'fish', name: 'Fish', icon: Fish, available: true },
       { id: 'insects', name: 'Insects', icon: Bug, available: true }
