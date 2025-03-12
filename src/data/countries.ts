@@ -1,37 +1,158 @@
 export const countries = [
-    {
-      name: "United States",
-      category: "countries",
-      imageUrl: "https://images.unsplash.com/photo-1605649487276-d74f551c8b53",
-      soundUrl: "", // Placeholder for sound URL
-      traits: ["Large", "North America", "Diverse", "Federal Republic", "English", "50 States"],
-    },
-    {
-      name: "Canada",
-      category: "countries",
-      imageUrl: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce",
-      soundUrl: "", // Placeholder for sound URL
-      traits: ["Vast", "North America", "Bilingual", "Constitutional Monarchy", "French/English", "10 Provinces"],
-    },
-    {
-      name: "Brazil",
-      category: "countries",
-      imageUrl: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325",
-      soundUrl: "", // Placeholder for sound URL
-      traits: ["Large", "South America", "Diverse", "Federal Republic", "Portuguese", "Amazon Rainforest"],
-    },
-    {
-      name: "United Kingdom",
-      category: "countries",
-      imageUrl: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
-      soundUrl: "", // Placeholder for sound URL
-      traits: ["Island Nation", "Europe", "Constitutional Monarchy", "English", "4 Countries", "Historic"],
-    },
-    {
-      name: "Japan",
-      category: "countries",
-      imageUrl: "https://images.unsplash.com/photo-1542051849877-53b0a7e2758f",
-      soundUrl: "", // Placeholder for sound URL
-      traits: ["Island Nation", "East Asia", "Technologically Advanced", "Constitutional Monarchy", "Japanese", "Unique Culture"],
-    },
-  ];
+  {
+    name: "USA",
+    flagUrl: "https://flagcdn.com/w320/us.png",
+    soundUrl: "/sounds/usa_anthem.mp3",
+    characteristics: ["Democratic", "Large", "Diverse", "Innovative", "Capitalist", "Global Power", "English-speaking"],
+  },
+  {
+    name: "Canada",
+    flagUrl: "https://flagcdn.com/w320/ca.png",
+    soundUrl: "/sounds/canada_anthem.mp3",
+    characteristics: ["Friendly", "Bilingual", "Cold", "Natural Beauty", "Multicultural", "Maple Leaf", "Hockey"],
+  },
+  {
+    name: "United Kingdom",
+    flagUrl: "https://flagcdn.com/w320/gb.png",
+    soundUrl: "/sounds/uk_anthem.mp3",
+    characteristics: ["Monarchy", "Historic", "English-speaking", "Global Influence", "Cultural Heritage", "Diverse", "Tea"],
+  },
+  {
+    name: "India",
+    flagUrl: "https://flagcdn.com/w320/in.png",
+    soundUrl: "/sounds/india_anthem.mp3",
+    characteristics: ["Democratic", "Cultural Heritage", "Diverse", "English-speaking", "Spiritual", "Large", "Historic"],
+  },
+  {
+    name: "Australia",
+    flagUrl: "https://flagcdn.com/w320/au.png",
+    soundUrl: "/sounds/australia_anthem.mp3",
+    characteristics: ["Island", "English-speaking", "Sporty", "Wildlife", "Cultural Diversity", "Friendly", "Great Barrier Reef"],
+  },
+  {
+    name: "Germany",
+    flagUrl: "https://flagcdn.com/w320/de.png",
+    soundUrl: "/sounds/germany_anthem.mp3",
+    characteristics: ["Industrialized", "European Union", "Efficient", "Historic", "Tech-driven", "Engineer-focused", "Beer"],
+  },
+  {
+    name: "Japan",
+    flagUrl: "https://flagcdn.com/w320/jp.png",
+    soundUrl: "/sounds/japan_anthem.mp3",
+    characteristics: ["Technologically Advanced", "Polite", "Historic", "Island Nation", "Cultural", "Precision", "Innovative"],
+  },
+  {
+    name: "France",
+    flagUrl: "https://flagcdn.com/w320/fr.png",
+    soundUrl: "/sounds/france_anthem.mp3",
+    characteristics: ["Romantic", "Artistic", "Historic", "Cultural", "Wine", "Fashion", "Revolutionary"],
+  },
+  {
+    name: "Italy",
+    flagUrl: "https://flagcdn.com/w320/it.png",
+    soundUrl: "/sounds/italy_anthem.mp3",
+    characteristics: ["Cultural", "Historic", "Artistic", "Cuisine", "Fashion", "Mediterranean", "Romantic"],
+  },
+  {
+    name: "Brazil",
+    flagUrl: "https://flagcdn.com/w320/br.png",
+    soundUrl: "/sounds/brazil_anthem.mp3",
+    characteristics: ["Carnival", "Football", "Warm Climate", "Multicultural", "Amazon Rainforest", "Friendly", "Tropical"],
+  },
+  {
+    name: "Mexico",
+    flagUrl: "https://flagcdn.com/w320/mx.png",
+    soundUrl: "/sounds/mexico_anthem.mp3",
+    characteristics: ["Vibrant", "Cultural", "Historic", "Spicy Cuisine", "Friendly", "Lively", "Famous for Mariachi"],
+  },
+  {
+    name: "South Korea",
+    flagUrl: "https://flagcdn.com/w320/kr.png",
+    soundUrl: "/sounds/south_korea_anthem.mp3",
+    characteristics: ["Technologically Advanced", "Pop Culture", "Dynamic", "Historic", "Education-focused", "Korean Wave", "Efficient"],
+  },
+  {
+    name: "Russia",
+    flagUrl: "https://flagcdn.com/w320/ru.png",
+    soundUrl: "/sounds/russia_anthem.mp3",
+    characteristics: ["Large", "Cold", "Historic", "Resource-rich", "Powerful", "Political", "Cultural Heritage"],
+  },
+  {
+    name: "China",
+    flagUrl: "https://flagcdn.com/w320/cn.png",
+    soundUrl: "/sounds/china_anthem.mp3",
+    characteristics: ["Most Populous", "Communist", "Technologically Advanced", "Cultural", "Historic", "Industrialized", "Emerging Superpower"],
+  },
+  {
+    name: "Argentina",
+    flagUrl: "https://flagcdn.com/w320/ar.png",
+    soundUrl: "/sounds/argentina_anthem.mp3",
+    characteristics: ["Passionate", "Football", "Cultural", "Wine", "Vibrant", "Historic", "Latin America"],
+  },
+  {
+    name: "South Africa",
+    flagUrl: "https://flagcdn.com/w320/za.png",
+    soundUrl: "/sounds/south_africa_anthem.mp3",
+    characteristics: ["Diverse", "Multilingual", "Cultural", "Wildlife", "Historic", "Democratic", "African"],
+  },
+  {
+    name: "Spain",
+    flagUrl: "https://flagcdn.com/w320/es.png",
+    soundUrl: "/sounds/spain_anthem.mp3",
+    characteristics: ["Warm Climate", "Historic", "Cultural", "Fiesta", "Football", "Mediterranean", "Artistic"],
+  },
+  {
+    name: "Egypt",
+    flagUrl: "https://flagcdn.com/w320/eg.png",
+    soundUrl: "/sounds/egypt_anthem.mp3",
+    characteristics: ["Ancient", "Cultural", "Desert", "Historic", "Pyramids", "Islamic", "Arabic-speaking"],
+  },
+  {
+    name: "Saudi Arabia",
+    flagUrl: "https://flagcdn.com/w320/sa.png",
+    soundUrl: "/sounds/saudi_anthem.mp3",
+    characteristics: ["Desert", "Monarchy", "Islamic", "Oil-rich", "Historic", "Arabic-speaking", "Conservative"],
+  },
+  {
+    name: "Nigeria",
+    flagUrl: "https://flagcdn.com/w320/ng.png",
+    soundUrl: "/sounds/nigeria_anthem.mp3",
+    characteristics: ["Diverse", "Large Population", "Cultural", "Oil-rich", "Historic", "English-speaking", "African"],
+  },
+  {
+    name: "Egypt",
+    flagUrl: "https://flagcdn.com/w320/eg.png",
+    soundUrl: "/sounds/egypt_anthem.mp3",
+    characteristics: ["Ancient", "Cultural", "Desert", "Historic", "Pyramids", "Islamic", "Arabic-speaking"],
+  },
+  {
+    name: "Turkey",
+    flagUrl: "https://flagcdn.com/w320/tr.png",
+    soundUrl: "/sounds/turkey_anthem.mp3",
+    characteristics: ["Bridge between East and West", "Historic", "Cultural", "Mediterranean", "Ottoman Heritage", "Islamic"],
+  },
+  {
+    name: "Indonesia",
+    flagUrl: "https://flagcdn.com/w320/id.png",
+    soundUrl: "/sounds/indonesia_anthem.mp3",
+    characteristics: ["Island Nation", "Tropical", "Cultural", "Biodiverse", "Spicy Cuisine", "Southeast Asia", "Friendly"],
+  },
+  {
+    name: "Pakistan",
+    flagUrl: "https://flagcdn.com/w320/pk.png",
+    soundUrl: "/sounds/pakistan_anthem.mp3",
+    characteristics: ["Islamic", "South Asia", "Cultural", "Mountains", "Historic", "Rich Heritage", "Diverse"],
+  },
+  {
+    name: "New Zealand",
+    flagUrl: "https://flagcdn.com/w320/nz.png",
+    soundUrl: "/sounds/new_zealand_anthem.mp3",
+    characteristics: ["Island", "English-speaking", "Kiwis", "Sporty", "Breathtaking Nature", "Friendly", "Eco-friendly"],
+  },
+  {
+    name: "Thailand",
+    flagUrl: "https://flagcdn.com/w320/th.png",
+    soundUrl: "/sounds/thailand_anthem.mp3",
+    characteristics: ["Tropical", "Buddhist", "Tourism", "Cultural", "Cuisine", "Royalty", "Friendly"],
+  },
+];
