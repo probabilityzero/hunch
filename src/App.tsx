@@ -161,7 +161,7 @@ function App() {
 
       <div className="max-w-4xl mx-auto px-4 pt-16">
         <div className="flex gap-4 justify-between items-center">
-          <button onClick={() => setGameState(INITIAL_STATE)} className="text-xs text-gray-600 hover:text-blue-600">Home</button>
+          {/* <button onClick={() => setGameState(INITIAL_STATE)} className="text-xs text-gray-600 hover:text-blue-600">Home</button> */}
           <div className="flex items-center gap-1 text-gray-600 rounded-full px-3 py-1 bg-gray-100">
             <Clock className="w-6 h-6" />
             <span className="text-lg font-bold">{formatTime(gameState.timeElapsed)}</span>
@@ -218,7 +218,7 @@ function App() {
             <div className="mt-2 flex gap-2">
               <button
                 onClick={handleShowHint}
-                className="px-2 py-0 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
+                className="flex items-center space-x-2 px-2 py-0 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                 title="Show Hint"
               >
                 <Lightbulb className="w-5 h-5" />
