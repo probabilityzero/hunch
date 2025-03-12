@@ -228,7 +228,7 @@ function App() {
                 className="p-2 text-gray-600 hover:text-gray-800 rounded-full transition-colors"
                 title="Play Sound Hint"
               >
-                <Volume2 className="w-6 h-6" />
+                <Volume2 className="w-5 h-6" />
               </button>
             </div>
           </div>

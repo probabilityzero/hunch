@@ -11,7 +11,7 @@ export const GameHeader: React.FC<GameHeaderProps> = ({ gameMode, guessCount }) 
       <div className="max-w-4xl mx-auto h-full flex items-center justify-between px-4">
         <h1 className="text-xl font-semibold text-gray-800">Hunch</h1>
         <div className="flex items-center gap-6">
-          <div className="font-medium text-gray-600">Guesses: {guessCount}</div>
+          <div className="font-medium text-gray-600">Score: {guessCount}</div>
         </div>
       </div>
     </header>
