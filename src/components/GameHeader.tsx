@@ -28,7 +28,7 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
   onBackToHome 
 }) => {
   return (
-    <header className="h-16 bg-gradient-to-r from-emerald-200 to-emerald-300 shadow-md fixed top-0 left-0 right-0 z-50">
+    <header className="h-12 bg-gradient-to-r from-emerald-200 to-emerald-300 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-4xl mx-auto h-full flex items-center justify-between px-4">
         <div className="flex items-center gap-3">
           {onBackToHome && (
@@ -39,7 +39,7 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
               <ArrowLeft className="w-5 h-5" />
             </button>
           )}
-          <h1 className="text-xl font-bold text-white">Hunch: {getGameModeName(gameMode)}</h1>
+          <h1 className="text-xl font-bold text-white">Hunch</h1>
         </div>
         
         <div className="flex items-center gap-4">

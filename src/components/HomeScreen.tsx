@@ -38,7 +38,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onSelectMode }) => {
   return (
     <div className="max-w-5xl mx-auto px-4 pt-10 pb-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-emerald-800 mb-4">Hunch</h1>
+        <h1 className="text-4xl font-bold text-emerald-800 mb-4"> </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           A Guessing Game
         </p>
