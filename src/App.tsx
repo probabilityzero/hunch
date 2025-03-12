@@ -4,12 +4,13 @@ import Fuse from 'fuse.js';
 import { Volume2, Clock, RefreshCcw, Lightbulb } from 'lucide-react';
 import Cookies from 'js-cookie';
 import { animals } from './data/animals';
+import { countries } from './data/countries'; // Import countries
 import { Home } from './components/Home.tsx';
 import { GuessedCard } from './components/GuessedCard.tsx';
 import { Header } from './components/Header.tsx';
 import { Congratulations } from './components/Congratulations.tsx';
 import { AnimatedHint } from './components/AnimatedHint';
-import type { GameState, Animal, GuessResult } from './types/game';
+import type { GameState, Animal, GuessResult, GameMode } from './types/game';
 
 const INITIAL_STATE: GameState = {
   searchTerm: '',
@@ -22,7 +23,8 @@ const INITIAL_STATE: GameState = {
   isCorrect: false
 };
 
-const fuse = new Fuse(animals, {
+// Initialize Fuse with an empty array, we'll re-initialize it based on gameMode
+const fuse = new Fuse<Animal>([], {
   keys: ['name'],
   threshold: 0.4
 });
@@ -35,13 +37,21 @@ function App() {
   const [showHint, setShowHint] = useState(false);
   const [currentHint, setCurrentHint] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const [showHelpModal, setShowHelpModal] = useState(false);
 
   useEffect(() => {
+    // Select a random animal or country based on gameMode
     if (!gameState.targetAnimal) {
-      const randomAnimal = animals.find(a => a.category === gameState.gameMode) || animals[0];
-      setGameState(prev => ({ ...prev, targetAnimal: randomAnimal }));
+      let data: Animal[] = [];
+      if (gameState.gameMode === 'countries') {
+        data = countries;
+      } else {
+        data = animals.filter(a => a.category === gameState.gameMode);
+      }
+      const randomItem = data.length > 0 ? data[Math.floor(Math.random() * data.length)] : null;
+      setGameState(prev => ({ ...prev, targetAnimal: randomItem }));
     }
-  }, [gameState.gameMode]);
+  }, [gameState.gameMode, gameState.targetAnimal]);
 
   useEffect(() => {
     let timer: number;
@@ -73,18 +83,27 @@ function App() {
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchTerm = e.target.value;
+    let data: Animal[] = [];
+
+    if (gameState.gameMode === 'countries') {
+      data = countries;
+    } else {
+      data = animals.filter((a) => a.category === gameState.gameMode)
+    }
+    
+    fuse.setCollection(data);
     const results = fuse.search(searchTerm);
     setGameState(prev => ({ ...prev, searchTerm, suggestions: results.map(result => result.item) }));
     setShowHint(false);
     setCurrentHint('');
   };
 
-  const handleSelectAnimal = (animal: Animal) => {
+  const handleSelectAnimal = (item: Animal) => {
     if (!gameState.targetAnimal) return;
 
-    const matchingTraits = new Set(animal.traits.filter(trait => gameState.targetAnimal!.traits.includes(trait)));
-    const isCorrect = animal.name === gameState.targetAnimal.name;
-    const newGuess: GuessResult = { animal, matchingTraits };
+    const matchingTraits = new Set(item.traits.filter(trait => gameState.targetAnimal!.traits.includes(trait)));
+    const isCorrect = item.name === gameState.targetAnimal.name;
+    const newGuess: GuessResult = { animal: item, matchingTraits };
 
     setGameState(prev => ({
       ...prev,
@@ -106,9 +125,15 @@ function App() {
     }
   };
 
-  const handleSelectMode = (mode: string) => {
-    const randomAnimal = animals.find(a => a.category === mode) || animals[0];
-    setGameState({ ...INITIAL_STATE, gameMode: mode, screen: 'game', targetAnimal: randomAnimal });
+  const handleSelectMode = (mode: GameMode) => {
+      let data: Animal[] = [];
+      if(mode === 'countries'){
+        data = countries;
+      } else {
+        data = animals.filter(a => a.category === mode);
+      }
+    const randomItem = data.length > 0 ? data[Math.floor(Math.random() * data.length)] : null;
+    setGameState({ ...INITIAL_STATE, gameMode: mode, screen: 'game', targetAnimal: randomItem });
   };
 
   const playRandomSound = () => {
@@ -117,8 +142,14 @@ function App() {
   };
 
   const resetGame = () => {
-    const randomAnimal = animals.find(a => a.category === gameState.gameMode) || animals[0];
-    setGameState({ ...INITIAL_STATE, screen: 'game', gameMode: gameState.gameMode, targetAnimal: randomAnimal });
+      let data: Animal[] = [];
+      if(gameState.gameMode === 'countries'){
+        data = countries;
+      } else {
+        data = animals.filter(a => a.category === gameState.gameMode);
+      }
+    const randomItem = data.length > 0 ? data[Math.floor(Math.random() * data.length)] : null;
+    setGameState({ ...INITIAL_STATE, screen: 'game', gameMode: gameState.gameMode, targetAnimal: randomItem });
     setShowHint(false);
     setCurrentHint('');
   };
@@ -149,7 +180,7 @@ function App() {
   if (gameState.screen === 'home') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} />
+        <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length}  showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} />
         <Home onSelectMode={handleSelectMode} />
       </div>
     );
@@ -157,7 +188,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} />
+      <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} />
 
       <div className="max-w-4xl mx-auto px-4 pt-16">
         <div className="flex gap-4 justify-between items-center">

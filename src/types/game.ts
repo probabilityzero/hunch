@@ -1,10 +1,11 @@
+export type GameMode = 'mammals' | 'birds' | 'reptiles' | 'countries';
+
 export interface Animal {
   name: string;
-  traits: string[];
-  difficulty: 'easy' | 'medium' | 'hard';
-  category: string;
+  category: GameMode;
   imageUrl: string;
   soundUrl: string;
+  traits: string[];
 }
 
 export interface GuessResult {
@@ -17,7 +18,7 @@ export interface GameState {
   guessHistory: GuessResult[];
   targetAnimal: Animal | null;
   suggestions: Animal[];
-  gameMode: 'animals' | 'plants' | 'countries';
+  gameMode: GameMode;
   screen: 'home' | 'game';
   timeElapsed: number;
   isCorrect: boolean;

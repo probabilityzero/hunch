@@ -28,7 +28,7 @@ const categories = [
     title: 'Geography',
     description: 'Guess our world and its countries',
     items: [
-      { id: 'countries', name: 'Countries', icon: Globe, available: false },
+      { id: 'countries', name: 'Countries', icon: Globe, available: true },
       { id: 'capitals', name: 'National Flags', icon: Flag, available: false }
     ]
   }
