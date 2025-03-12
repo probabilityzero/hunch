@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rabbit, Bird, Fish, Leaf, Globe, Bug } from 'lucide-react';
+import { Rabbit, Bird, Fish, Leaf, Globe, Bug, Flag } from 'lucide-react';
 
 interface HomeScreenProps {
   onSelectMode: (mode: string) => void;
@@ -26,7 +26,7 @@ const categories = [
     title: 'Geography',
     items: [
       { id: 'countries', name: 'Countries', icon: Globe, available: false },
-      { id: 'capitals', name: 'Capital Cities', icon: Globe, available: false }
+      { id: 'capitals', name: 'National Flags', icon: Flag, available: false }
     ]
   }
 ];
