@@ -218,9 +218,10 @@ function App() {
             <div className="mt-2 flex gap-2">
               <button
                 onClick={handleShowHint}
-                className="px-2 py-0.5 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
+                className="px-2 py-0 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                 title="Show Hint"
               >
+                <Lightbulb className="w-5 h-5" />
                 Hint
               </button>
               <button
@@ -228,7 +229,7 @@ function App() {
                 className="p-2 text-gray-600 hover:text-gray-800 rounded-full transition-colors"
                 title="Play Sound Hint"
               >
-                <Volume2 className="w-5 h-6" />
+                <Volume2 className="w-5 h-5" />
               </button>
             </div>
           </div>
