@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { ArrowLeft, Home, HelpCircle } from 'lucide-react';
-import { HelpModal } from './HelpModal.tsx';
+import { Help } from './Help.tsx';
 
 interface HeaderProps {
   gameMode: string;
@@ -66,7 +66,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
     </header>
-    <HelpModal isOpen={showHelpModal} onClose={() => setShowHelpModal(false)} />
+    <Help isOpen={showHelpModal} onClose={() => setShowHelpModal(false)} />
     </>
   );
 };
