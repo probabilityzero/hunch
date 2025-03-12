@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-mint: 220, 255, 235;
+    --color-baby-blue: 235, 245, 255;
+    --color-lavender: 245, 235, 255;
+  }
+}
+
+/* Add keyframes animation */
+@keyframes fallAndFade {
+  0% {
+    transform: translateY(-100px) translateX(-50%) scale(0.5);
+    opacity: 0;
+  }
+  20% {
+      opacity:1;
+      transform: translateY(0px) translateX(-50%) scale(1);
+  }
+  80% {
+    transform: translateY(50px) translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) translateX(-50%) scale(0.5);
+    opacity: 0;
+  }
+}
