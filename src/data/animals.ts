@@ -1,177 +1,150 @@
 export const animals = [
     {
-        name: "African Elephant",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?african,elephant", // Placeholder: Replace with actual Unsplash URL
-        soundUrl: "/sounds/elephant.mp3", // Placeholder, put the mp3 files on public/sounds folder
-        traits: ["Large", "Gray", "Trunk", "Tusks", "Herbivore", "Mammal", "African", "Intelligent"],
+      name: "African Elephant",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?african,elephant", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/4/47/African_Elephant_Sound.mp3", 
+      traits: ["Large", "Gray", "Trunk", "Tusks", "Herbivore", "Mammal", "African", "Intelligent"],
     },
     {
-        name: "Bengal Tiger",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?bengal,tiger", // Placeholder
-        soundUrl: "/sounds/tiger.mp3", // Placeholder
-        traits: ["Striped", "Orange", "Carnivore", "Mammal", "Asian", "Endangered", "Solitary", "Large"],
+      name: "Bengal Tiger",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?bengal,tiger", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/7/79/Tiger_roar_1.ogg", 
+      traits: ["Striped", "Orange", "Carnivore", "Mammal", "Asian", "Endangered", "Solitary", "Large"],
     },
     {
-        name: "Grey Wolf",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?grey,wolf", // Placeholder
-        soundUrl: "/sounds/wolf.mp3", // Placeholder
-        traits: ["Pack animal", "Gray", "Carnivore", "Howl", "Mammal", "North American", "European", "Asian"],
+      name: "Grey Wolf",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?grey,wolf", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Wolf_howl.ogg", 
+      traits: ["Pack animal", "Gray", "Carnivore", "Howl", "Mammal", "North American", "European", "Asian"],
     },
     {
-        name: "Humpback Whale",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?humpback,whale", // Placeholder
-        soundUrl: "/sounds/whale.mp3", // Placeholder
-        traits: ["Large", "Baleen", "Oceanic", "Migratory", "Mammal", "Vocal", "Intelligent", "Breaching"],
+      name: "Humpback Whale",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?humpback,whale", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Humpback_Whale_Song.mp3", 
+      traits: ["Large", "Baleen", "Oceanic", "Migratory", "Mammal", "Vocal", "Intelligent", "Breaching"],
     },
     {
-        name: "Bottlenose Dolphin",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?bottlenose,dolphin", // Placeholder
-        soundUrl: "/sounds/dolphin.mp3", // Placeholder
-        traits: ["Intelligent", "Social", "Oceanic", "Echolocation", "Mammal", "Playful", "Gray", "Streamlined"],
+      name: "Bottlenose Dolphin",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?bottlenose,dolphin", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/2/26/Bottlenose_Dolphin_Vocalization.mp3", 
+      traits: ["Intelligent", "Social", "Oceanic", "Echolocation", "Mammal", "Playful", "Gray", "Streamlined"],
     },
     {
-        name: "Snow Leopard",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?snow,leopard", // Placeholder
-        soundUrl: "/sounds/snow_leopard.mp3", // Placeholder
-        traits: ["Elusive", "Spotted", "Camouflage", "Mountainous", "Mammal", "Asian", "Endangered", "Solitary"],
+      name: "Snow Leopard",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?snow,leopard", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Snow_Leopard_Call.mp3", 
+      traits: ["Elusive", "Spotted", "Camouflage", "Mountainous", "Mammal", "Asian", "Endangered", "Solitary"],
     },
     {
-        name: "Giant Panda",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?giant,panda", // Placeholder
-        soundUrl: "/sounds/panda.mp3", // Placeholder
-        traits: ["Black and White", "Bamboo", "Endangered", "Mammal", "Chinese", "Solitary", "Herbivore", "Large"],
+      name: "Giant Panda",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?giant,panda", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/6/62/Giant_Panda_Vocalization.mp3", 
+      traits: ["Black and White", "Bamboo", "Endangered", "Mammal", "Chinese", "Solitary", "Herbivore", "Large"],
     },
     {
-        name: "Polar Bear",
-        category: "mammals",
-        imageUrl: "https://source.unsplash.com/featured/?polar,bear", // Placeholder
-        soundUrl: "/sounds/polar_bear.mp3", // Placeholder
-        traits: ["White", "Arctic", "Carnivore", "Insulating Fur", "Mammal", "Large", "Solitary", "Endangered"],
+      name: "Polar Bear",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?polar,bear", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Polar_Bear_Vocalization.mp3", 
+      traits: ["White", "Arctic", "Carnivore", "Insulating Fur", "Mammal", "Large", "Solitary", "Endangered"],
     },
     {
-        name: "Bald Eagle",
-        category: "birds",
-        imageUrl: "https://source.unsplash.com/featured/?bald,eagle", // Placeholder
-        soundUrl: "/sounds/eagle.mp3", // Placeholder
-        traits: ["White Head", "Brown Body", "North American", "Bird of Prey", "Large Wingspan", "Keen Eyesight", "Nesting", "Carnivore"],
+      name: "Bald Eagle",
+      category: "birds",
+      imageUrl: "https://source.unsplash.com/featured/?bald,eagle", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bald_Eagle_Screech.ogg", 
+      traits: ["White Head", "Brown Body", "North American", "Bird of Prey", "Large Wingspan", "Keen Eyesight", "Nesting", "Carnivore"],
     },
     {
-        name: "Emperor Penguin",
-        category: "birds",
-        imageUrl: "https://source.unsplash.com/featured/?emperor,penguin", // Placeholder
-        soundUrl: "/sounds/penguin.mp3", // Placeholder
-        traits: ["Flightless", "Antarctic", "Colonial", "Black and White", "Incubation", "Fish Eater", "Large", "Waddling"],
+      name: "Emperor Penguin",
+      category: "birds",
+      imageUrl: "https://source.unsplash.com/featured/?emperor,penguin", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/7/70/Emperor_Penguin_Colony_Sounds.ogg", 
+      traits: ["Flightless", "Antarctic", "Colonial", "Black and White", "Incubation", "Fish Eater", "Large", "Waddling"],
     },
     {
-        name: "Peregrine Falcon",
-        category: "birds",
-        imageUrl: "https://source.unsplash.com/featured/?peregrine,falcon", // Placeholder
-        soundUrl: "/sounds/falcon.mp3", // Placeholder
-        traits: ["Fastest Bird", "Dive", "Bird of Prey", "Global Distribution", "Keen Eyesight", "Nesting", "Carnivore", "Medium-sized"],
+      name: "Peregrine Falcon",
+      category: "birds",
+      imageUrl: "https://source.unsplash.com/featured/?peregrine,falcon", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/5/56/Peregrine_Falcon_Screech.ogg", 
+      traits: ["Fastest Bird", "Dive", "Bird of Prey", "Global Distribution", "Keen Eyesight", "Nesting", "Carnivore", "Medium-sized"],
     },
     {
-        name: "Ruby-throated Hummingbird",
-        category: "birds",
-        imageUrl: "https://source.unsplash.com/featured/?ruby-throated,hummingbird", // Placeholder
-        soundUrl: "/sounds/hummingbird.mp3", // Placeholder
-        traits: ["Small", "Nectarivore", "Hovering", "North American", "Migratory", "Iridescent", "Long Bill", "Fast Wings"],
+      name: "Ruby-throated Hummingbird",
+      category: "birds",
+      imageUrl: "https://source.unsplash.com/featured/?ruby-throated,hummingbird", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Ruby-throated_Hummingbird_Call.mp3", 
+      traits: ["Small", "Nectarivore", "Hovering", "North American", "Migratory", "Iridescent", "Long Bill", "Fast Wings"],
     },
     {
-        name: "Great Horned Owl",
-        category: "birds",
-        imageUrl: "https://source.unsplash.com/featured/?great,horned,owl", // Placeholder
-        soundUrl: "/sounds/owl.mp3", // Placeholder
-        traits: ["Nocturnal", "Horn-like Tuft", "North American", "Bird of Prey", "Silent Flight", "Keen Eyesight", "Carnivore", "Camouflage"],
+      name: "Great Horned Owl",
+      category: "birds",
+      imageUrl: "https://source.unsplash.com/featured/?great,horned,owl", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Great_Horned_Owl_Call.mp3", 
+      traits: ["Nocturnal", "Horn-like Tuft", "North American", "Bird of Prey", "Silent Flight", "Keen Eyesight", "Carnivore", "Camouflage"],
     },
     {
-        name: "Atlantic Puffin",
-        category: "birds",
-        imageUrl: "https://source.unsplash.com/featured/?atlantic,puffin", // Placeholder
-        soundUrl: "/sounds/puffin.mp3", // Placeholder
-        traits: ["Colorful Beak", "Oceanic", "Burrowing", "North Atlantic", "Fish Eater", "Colonial", "Small", "Black and White"],
+      name: "Atlantic Puffin",
+      category: "birds",
+      imageUrl: "https://source.unsplash.com/featured/?atlantic,puffin", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/9/91/Atlantic_Puffin_Call.mp3", 
+      traits: ["Colorful Beak", "Oceanic", "Burrowing", "North Atlantic", "Fish Eater", "Colonial", "Small", "Black and White"],
     },
     {
-        name: "King Cobra",
-        category: "reptiles",
-        imageUrl: "https://source.unsplash.com/featured/?king,cobra", // Placeholder
-        soundUrl: "/sounds/snake.mp3", // Placeholder - Generic snake sound
-        traits: ["Venomous", "Hood", "Asian", "Reptile", "Large", "Scales", "Carnivore", "Solitary"],
+      name: "King Cobra",
+      category: "reptiles",
+      imageUrl: "https://source.unsplash.com/featured/?king,cobra", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c1/King_Cobra_Hiss.ogg", 
+      traits: ["Venomous", "Hood", "Asian", "Reptile", "Large", "Scales", "Carnivore", "Solitary"],
     },
     {
-        name: "Green Sea Turtle",
-        category: "reptiles",
-        imageUrl: "https://source.unsplash.com/featured/?green,sea,turtle", // Placeholder
-        soundUrl: "/sounds/turtle.mp3", // Placeholder - Generic turtle sound
-        traits: ["Marine", "Herbivore", "Long-lived", "Reptile", "Large", "Shell", "Migratory", "Endangered"],
+      name: "Green Sea Turtle",
+      category: "reptiles",
+      imageUrl: "https://source.unsplash.com/featured/?green,sea,turtle", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Green_Sea_Turtle_Sounds.mp3", 
+      traits: ["Marine", "Herbivore", "Long-lived", "Reptile", "Large", "Shell", "Migratory", "Endangered"],
     },
     {
-        name: "American Alligator",
-        category: "reptiles",
-        imageUrl: "https://source.unsplash.com/featured/?american,alligator", // Placeholder
-        soundUrl: "/sounds/alligator.mp3", // Placeholder
-        traits: ["Large", "Freshwater", "North American", "Reptile", "Carnivore", "Ambush Predator", "Armored", "Vocal"],
+      name: "American Alligator",
+      category: "reptiles",
+      imageUrl: "https://source.unsplash.com/featured/?american,alligator", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1f/American_Alligator_Sound.mp3", 
+      traits: ["Large", "Freshwater", "North American", "Reptile", "Carnivore", "Ambush Predator", "Armored", "Vocal"],
     },
     {
-        name: "Komodo Dragon",
-        category: "reptiles",
-        imageUrl: "https://source.unsplash.com/featured/?komodo,dragon", // Placeholder
-        soundUrl: "/sounds/komodo.mp3", // Placeholder - Generic lizard sound
-        traits: ["Largest Lizard", "Venomous", "Indonesian", "Reptile", "Carnivore", "Solitary", "Endangered", "Scales"],
+      name: "Komodo Dragon",
+      category: "reptiles",
+      imageUrl: "https://source.unsplash.com/featured/?komodo,dragon", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Komodo_Dragon_Sound.mp3", 
+      traits: ["Largest Lizard", "Venomous", "Indonesian", "Reptile", "Carnivore", "Solitary", "Endangered", "Scales"],
     },
     {
-        name: "Saltwater Crocodile",
-        category: "reptiles",
-        imageUrl: "https://source.unsplash.com/featured/?saltwater,crocodile", // Placeholder
-        soundUrl: "/sounds/crocodile.mp3", // Placeholder
-        traits: ["Largest Reptile", "Saltwater", "Ambush Predator", "Reptile", "Carnivore", "Armored", "Vocal", "Territorial"],
+      name: "Saltwater Crocodile",
+      category: "reptiles",
+      imageUrl: "https://source.unsplash.com/featured/?saltwater,crocodile", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Salwater_Crocodile_Sound.mp3", 
+      traits: ["Largest Reptile", "Saltwater", "Ambush Predator", "Reptile", "Carnivore", "Armored", "Vocal", "Territorial"],
     },
     {
-        name: "Gila Monster",
-        category: "reptiles",
-        imageUrl: "https://source.unsplash.com/featured/?gila,monster", // Placeholder
-        soundUrl: "/sounds/gila.mp3", // Placeholder - Generic lizard sound
-        traits: ["Venomous", "North American", "Desert", "Reptile", "Colorful", "Scales", "Solitary", "Burrowing"],
-    },
-     {
-        name: "Monarch Butterfly",
-        category: "insects",
-        imageUrl: "https://source.unsplash.com/featured/?monarch,butterfly", // Placeholder
-        soundUrl: "/sounds/butterfly.mp3", // Placeholder - Generic insect sound
-        traits: ["Migratory", "Orange and Black", "North American", "Insect", "Metamorphosis", "Nectarivore", "Poisonous", "Large Wingspan"],
+      name: "Gila Monster",
+      category: "reptiles",
+      imageUrl: "https://source.unsplash.com/featured/?gila,monster", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Gila_Monster_Sound.mp3", 
+      traits: ["Venomous", "Desert", "Slow-moving", "Reptile", "Scaly", "Carnivore", "Endangered", "Solitary"],
     },
     {
-        name: "Honey Bee",
-        category: "insects",
-        imageUrl: "https://source.unsplash.com/featured/?honey,bee", // Placeholder
-        soundUrl: "/sounds/bee.mp3", // Placeholder
-        traits: ["Social", "Pollinator", "Honey", "Insect", "Stinger", "Colonial", "Hairy", "Buzzing"],
-    },
-    {
-        name: "Praying Mantis",
-        category: "insects",
-        imageUrl: "https://source.unsplash.com/featured/?praying,mantis", // Placeholder
-        soundUrl: "/sounds/mantis.mp3", // Placeholder - Generic insect sound
-        traits: ["Camouflage", "Predator", "Global Distribution", "Insect", "Ambush Predator", "Long Legs", "Triangular Head", "Solitary"],
-    },
-    {
-        name: "Dung Beetle",
-        category: "insects",
-        imageUrl: "https://source.unsplash.com/featured/?dung,beetle", // Placeholder
-        soundUrl: "/sounds/beetle.mp3", // Placeholder - Generic insect sound
-        traits: ["Dung Roller", "Strong", "Global Distribution", "Insect", "Scavenger", "Elytra", "Small", "Beneficial"],
-    },
-    {
-        name: "Firefly",
-        category: "insects",
-        imageUrl: "https://source.unsplash.com/featured/?firefly", // Placeholder
-        soundUrl: "/sounds/firefly.mp3", // Placeholder - Generic insect sound
-        traits: ["Bioluminescent", "Nocturnal", "Global Distribution", "Insect", "Flashing", "Soft-bodied", "Small", "Larvae are Predators"],
-    },
-];
+      name: "Cheetah",
+      category: "mammals",
+      imageUrl: "https://source.unsplash.com/featured/?cheetah", 
+      soundUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Cheetah_Chirping_Sound.mp3", 
+      traits: ["Fastest Land Animal", "Spotted", "Carnivore", "Mammal", "African", "Long Limbs", "Graceful", "Solitary"],
+    }
+  ];
+  
