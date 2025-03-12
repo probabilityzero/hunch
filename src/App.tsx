@@ -236,7 +236,7 @@ function App() {
                 value={gameState.searchTerm}
                 onChange={handleSearch}
                 onKeyDown={handleKeyDown}
-                placeholder="Choose an animal..."
+                placeholder="Choose your guess..."
                 className="w-full px-4 py-1 text-lg border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500"
                 disabled={gameState.isCorrect}
               />
