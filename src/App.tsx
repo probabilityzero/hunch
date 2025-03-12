@@ -4,9 +4,9 @@ import Fuse from 'fuse.js';
 import { Volume2, Clock, RefreshCcw, Lightbulb } from 'lucide-react';
 import Cookies from 'js-cookie';
 import { animals } from './data/animals';
-import { HomeScreen } from './components/HomeScreen';
-import { GuessRow } from './components/GuessRow';
-import { GameHeader } from './components/GameHeader';
+import { Home } from './components/Home.tsx';
+import { GuessedCard } from './components/GuessedCard.tsx';
+import { Header } from './components/Header.tsx';
 import { Congratulations } from './components/Congratulations.tsx';
 import { AnimatedHint } from './components/AnimatedHint';
 import type { GameState, Animal, GuessResult } from './types/game';
@@ -149,15 +149,15 @@ function App() {
   if (gameState.screen === 'home') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <GameHeader gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} />
-        <HomeScreen onSelectMode={handleSelectMode} />
+        <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} />
+        <Home onSelectMode={handleSelectMode} />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <GameHeader gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} />
+      <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} />
 
       <div className="max-w-4xl mx-auto px-4 pt-16">
         <div className="flex gap-4 justify-between items-center">
@@ -174,7 +174,7 @@ function App() {
 
         <div className="mt-8 space-y-4">
           {gameState.guessHistory.map((guess, index) => (
-            <GuessRow key={index} animal={guess.animal} matchingTraits={guess.matchingTraits} targetTraits={gameState.targetAnimal?.traits || []} />
+            <GuessedCard key={index} animal={guess.animal} matchingTraits={guess.matchingTraits} targetTraits={gameState.targetAnimal?.traits || []} />
           ))}
         </div>
 

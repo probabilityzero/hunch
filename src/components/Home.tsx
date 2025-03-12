@@ -1,7 +1,7 @@
 import React from 'react';
 import { Rabbit, Bird, Fish, Leaf, Globe, Bug, Flag } from 'lucide-react';
 
-interface HomeScreenProps {
+interface HomeProps {
   onSelectMode: (mode: string) => void;
 }
 
@@ -34,7 +34,7 @@ const categories = [
   }
 ];
 
-export const HomeScreen: React.FC<HomeScreenProps> = ({ onSelectMode }) => {
+export const Home: React.FC<HomeProps> = ({ onSelectMode }) => {
   return (
     <div className="max-w-5xl mx-auto px-4 pt-10 pb-16">
       <div className="text-center my-16">
@@ -90,4 +90,4 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onSelectMode }) => {
   );
 };
 
-export default HomeScreen;
+export default Home;

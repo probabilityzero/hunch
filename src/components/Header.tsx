@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowLeft, Home, HelpCircle } from 'lucide-react';
 
-interface GameHeaderProps {
+interface HeaderProps {
   gameMode: string;
   guessCount: number;
   onBackToHome?: () => void;
@@ -22,14 +22,14 @@ const getGameModeName = (mode: string): string => {
   return modeMap[mode] || 'Hunch';
 };
 
-export const GameHeader: React.FC<GameHeaderProps> = ({ 
+export const Header: React.FC<HeaderProps> = ({ 
   gameMode, 
   guessCount,
   onBackToHome 
 }) => {
   return (
     <header className="h-12 bg-gradient-to-r from-emerald-600 to-emerald-300 shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-4xl mx-auto h-full flex items-center justify-between">
+      <div className="max-w-4xl mx-auto h-full flex items-center justify-between mx-4">
         <div className="flex items-center gap-3">
           {onBackToHome && (
             <button 
@@ -62,4 +62,4 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
   );
 };
 
-export default GameHeader;
+export default Header;

@@ -1,13 +1,13 @@
 import React from 'react';
 import type { Animal } from '../types/game';
 
-interface GuessRowProps {
+interface GuessedCardProps {
   animal: Animal;
   matchingTraits: Set<string>;
   targetTraits: string[];
 }
 
-export const GuessRow: React.FC<GuessRowProps> = ({ animal, matchingTraits, targetTraits }) => {
+export const GuessedCard: React.FC<GuessedCardProps> = ({ animal, matchingTraits, targetTraits }) => {
   const displayedTraits = animal.traits.slice(0, 5);
 
   return (
