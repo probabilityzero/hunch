@@ -218,7 +218,7 @@ function App() {
             <div className="mt-2 flex gap-2">
               <button
                 onClick={handleShowHint}
-                className="flex items-center space-x-2 px-2 py-0 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
+                className="flex items-center space-x-2 px-2 py-1 bg-yellow-500 text-white rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                 title="Show Hint"
               >
                 <Lightbulb className="w-4 h-4" />
