@@ -190,7 +190,7 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       {/* <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} /> */}
 
-      <div className="max-w-4xl mx-auto px-4 pt-16">
+      <div className="max-w-4xl mx-auto px-4">
         <div className="flex gap-4 justify-between items-center">
           <button onClick={() => setGameState(INITIAL_STATE)} className="text-xs text-gray-600 hover:text-blue-600">Home</button>
           <div className="flex items-center gap-1 text-gray-600 rounded-full px-3 py-1 bg-gray-100">
