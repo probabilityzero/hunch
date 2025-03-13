@@ -180,7 +180,7 @@ function App() {
   if (gameState.screen === 'home') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length}  showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} />
+        {/* <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length}  showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} /> */}
         <Home onSelectMode={handleSelectMode} />
       </div>
     );
@@ -188,7 +188,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} />
+      {/* <Header gameMode={gameState.gameMode} guessCount={gameState.guessHistory.length} showHelpModal={showHelpModal} setShowHelpModal={setShowHelpModal} /> */}
 
       <div className="max-w-4xl mx-auto px-4 pt-16">
         <div className="flex gap-4 justify-between items-center">
